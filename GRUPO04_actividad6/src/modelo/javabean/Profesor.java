@@ -3,6 +3,20 @@ package modelo.javabean;
 public class Profesor extends Persona {
 	private String competencias;
 	
+	public Profesor (
+		String nif, 
+		String nombre, 
+		String direccion, 
+		String telefono, 
+		String competencias) 
+	{
+		this.setNif(nif);
+		this.setNombre(nombre);
+		this.setDireccion(direccion);
+		this.setTelefono(telefono);
+		this.competencias = competencias;
+	}
+	
 	public String getCompetencias() {
 		return competencias;
 	}

@@ -2,6 +2,20 @@ package modelo.javabean;
 public class Alumno extends Persona {
 	private String curso;
 
+	public Alumno (
+		String nif, 
+		String nombre, 
+		String direccion, 
+		String telefono, 
+		String curso) 
+	{
+		this.setNif(nif);
+		this.setNombre(nombre);
+		this.setDireccion(direccion);
+		this.setTelefono(telefono);
+		this.curso = curso;
+	}
+	
 	public String getCurso() {
 		return curso;
 	}

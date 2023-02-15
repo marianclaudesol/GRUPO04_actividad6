@@ -3,6 +3,20 @@ package modelo.javabean;
 public class Administrativo extends Persona {
 	private String tareas;
 
+	public Administrativo (
+		String nif, 
+		String nombre, 
+		String direccion, 
+		String telefono, 
+		String tareas) 
+	{
+		this.setNif(nif);
+		this.setNombre(nombre);
+		this.setDireccion(direccion);
+		this.setTelefono(telefono);
+		this.tareas = tareas;
+	}
+	
 	public String getTareas() {
 		return tareas;
 	}
