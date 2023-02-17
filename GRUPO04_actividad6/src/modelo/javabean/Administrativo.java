@@ -1,6 +1,7 @@
 package modelo.javabean;
 
 public class Administrativo extends Persona {
+	
 	private String tareas;
 
 	public Administrativo (
@@ -28,7 +29,7 @@ public class Administrativo extends Persona {
 	public String trabajar() {
 		return "El administrativo " 
 			 + this.getNombre() 
-			 + "va a realizar estas tareas: " 
+			 + " va a realizar estas tareas: " 
 			 + this.tareas; 
 	}
 	
@@ -45,5 +46,6 @@ public class Administrativo extends Persona {
 			 + getNombre() + ", getDireccion()=" + getDireccion() + ", getTelefono()=" + getTelefono()
 			 + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
 			 + "]";
-	}
+	}	
+
 }

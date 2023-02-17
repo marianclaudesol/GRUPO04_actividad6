@@ -1,5 +1,7 @@
 package modelo.javabean;
+
 public class Alumno extends Persona {
+	
 	private String curso;
 
 	public Alumno (
@@ -43,3 +45,5 @@ public class Alumno extends Persona {
 			 + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 	}
 }
+
+
